@@ -1,0 +1,76 @@
+                       PAKISTAN STOCK EXCHANGE LIMITED
+                    FLUCTUATION REPORT FROM 09:17 AM To 17:15 PM
+                                   May. 27, 2022
+
+
+
+                             P.Turn. :       347,068,781
+                             C.Turn. :       527,672,738
+                        P.Trd.Val: Rs.     9,042,592,249
+                        C.Trd.Val: Rs.    13,974,302,786
+                        P.Mkt.Cap: Rs. 7,066,296,989,418
+                        C.Mkt.Cap: Rs. 7,123,366,948,421
+
+                           N. Change :    57,069,959,003
+                                Plus :               223
+                               Minus :               131
+                               Equal :                14
+                               Total :               368
+
+                      P.Kse100 Index :          42541.71
+                      C.Kse100 Index :          42861.45
+                     N.Change Points :            319.74
+                    N.Change Percent :              0.75
+
+               P.KSE All Share Index :          29026.85
+               C.KSE All Share Index :          29257.53
+                     N.Change Points :            230.68
+                    N.Change percent :              0.79
+
+                       PAKISTAN STOCK EXCHANGE LIMITED
+                    FLUCTUATION REPORT FROM 09:17 AM To 17:15 PM
+                                   May. 27, 2022
+
+
+                      P.Kse 30 Index :          16143.03
+                      C.Kse 30 Index :          16276.12
+                     N.Change Points :            133.09
+                    N.Change Percent :               .82
+
+                      P.KMI 30 Index :          68457.83
+                      C.KMI 30 Index :          69055.39
+                     N.Change Points :            597.56
+                    N.Change Percent :               .87
+                     P.PSX-KMI Index :          20814.94
+                     C.PSX-KMI Index :          21000.61
+                     N.Change Points :            185.67
+                    N.Change Percent :               .89
+                      P.NITPGI Index :
+                                                 8868.31
+                      C.NITPGI Index :           8929.02
+                     N.Change Points :             60.71
+                    N.Change Percent :               .68
+                        P.UPP9 Index :          11042.05
+                        C.UPP9 Index :           11123.7
+                     N.Change Points :             81.65
+                    N.Change Percent :               .74
+                      P.NBPPGI Index :           10551.1
+                      C.NBPPGI Index :          10613.27
+                     N.Change Points :             62.17
+                    N.Change Percent :               .59
+
+                       P.MZNPI Index :           8614.74
+                       C.MZNPI Index :           8676.95
+                     N.Change Points :             62.21
+                    N.Change Percent :               .72
+                       P.JSMFI Index :          10340.69
+                       C.JSMFI Index :          10488.56
+                     N.Change Points :            147.87
+                    N.Change Percent :              1.43
+
+
+                         P.ACI Index :           8190.77
+                         C.ACI Index :            8265.6
+                     N.Change Points :             74.83
+                    N.Change Percent :               .91
+

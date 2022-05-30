@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+  </head>
+  <body>
+    <div>
+      <h2 class="text-center"><u>Libor</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Overnight</th>
+            <th>Month 1</th>
+            <th>Month 3</th>
+            <th>Month 6</th>
+            <th>Month 12</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if libor_list %} {% for i in libor_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.overnight}}</td>
+            <td>{{i.Month_1}}</td>
+            <td>{{i.Month_3}}</td>
+            <td>{{i.Month_6}}</td>
+            <td>{{i.Month_12}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Kibor</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Month 1</th>
+            <th>Month 3</th>
+            <th>Month 6</th>
+            <th>Month 9</th>
+            <th>Year 1</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if kibor_list %} {% for i in kibor_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Week_1}}</td>
+            <td>{{i.Week_2}}</td>
+            <td>{{i.Month_1}}</td>
+            <td>{{i.Month_3}}</td>
+            <td>{{i.Month_6}}</td>
+            <td>{{i.Month_9}}</td>
+            <td>{{i.Year_1}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>ALL SHARE INDEX</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Month 1</th>
+            <th>Month 3</th>
+            <th>Month 6</th>
+            <th>Month 9</th>
+            <th>Year 1</th>
+            <th>M Cap %</th>
+            <th>T Cap %</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if allshare_list %} {% for i in allshare_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Sector}}</td>
+            <td>{{i.Mkt_Cap}}</td>
+            <td>{{i.Turnover}}</td>
+            <td>{{i.Traded_Value}}</td>
+            <td>{{i.Pre_Index}}</td>
+            <td>{{i.Cur_Index}}</td>
+            <td>{{i.N_Chg}}</td>
+            <td>{{i.M_CAP_percent}}</td>
+            <td>{{i.T_Cpt_percent}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>KSE100 </u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Symbol</th>
+            <th>SCRIP</th>
+            <th>LDCP</th>
+            <th>CURRENT</th>
+            <th>CHANGE</th>
+            <th>CHANGE %</th>
+            <th>IDX WTG%</th>
+            <th>IDX POINT</th>
+            <th>VOLUME</th>
+            <th>FREE FLOAT</th>
+            <th>MARKET CAP</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if kse_list %} {% for i in kse_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Symbol}}</td>
+            <td>{{i.SCRIP}}</td>
+            <td>{{i.LDCP}}</td>
+            <td>{{i.CURRENT}}</td>
+            <td>{{i.CHANGE}}</td>
+            <td>{{i.CHANGE_percent}}</td>
+            <td>{{i.IDX_WTG_percent}}</td>
+            <td>{{i.IDX_POINT}}</td>
+            <td>{{i.VOLUME}}</td>
+            <td>{{i.FREEFLOAT}}</td>
+            <td>{{i.MARKET_CAP}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>PKRV</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>WEEK 1</th>
+            <th>WEEK 2</th>
+            <th>Month 1</th>
+            <th>Month 2</th>
+            <th>Month 3</th>
+            <th>Month 4</th>
+            <th>Month 6</th>
+            <th>Month 9</th>
+            <th>YEAR 1</th>
+            <th>YEAR 2</th>
+            <th>YEAR 3</th>
+            <th>YEAR 4</th>
+            <th>YEAR 5</th>
+            <th>YEAR 6</th>
+            <th>YEAR 7</th>
+            <th>YEAR 8</th>
+            <th>YEAR 9</th>
+            <th>YEAR 10</th>
+            <th>YEAR 15</th>
+            <th>YEAR 20</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if pkrv_list %} {% for i in pkrv_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.W1}}</td>
+            <td>{{i.W2}}</td>
+            <td>{{i.M1}}</td>
+            <td>{{i.M2}}</td>
+            <td>{{i.M3}}</td>
+            <td>{{i.M4}}</td>
+            <td>{{i.M6}}</td>
+            <td>{{i.M9}}</td>
+            <td>{{i.Y1}}</td>
+            <td>{{i.Y2}}</td>
+            <td>{{i.Y3}}</td>
+            <td>{{i.Y4}}</td>
+            <td>{{i.Y5}}</td>
+            <td>{{i.Y6}}</td>
+            <td>{{i.Y7}}</td>
+            <td>{{i.Y8}}</td>
+            <td>{{i.Y9}}</td>
+            <td>{{i.Y10}}</td>
+            <td>{{i.Y15}}</td>
+            <td>{{i.Y20}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Scrips</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>TICKER</th>
+            <th>COMPANY NAME</th>
+            <th>OPEN</th>
+            <th>HIGH</th>
+            <th>LOW</th>
+            <th>CLOSE</th>
+            <th>VOLUME</th>
+            <th>LDCP</th>
+            <th>CHANGE</th>
+            <th>CHANGE %</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if closing_list %} {% for i in closing_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Ticker}}</td>
+            <td>{{i.CompanyName}}</td>
+            <td>{{i.Open}}</td>
+            <td>{{i.High}}</td>
+            <td>{{i.Low}}</td>
+            <td>{{i.Close}}</td>
+            <td>{{i.Volume}}</td>
+            <td>{{i.LDCP}}</td>
+            <td>{{i.Change}}</td>
+            <td>{{i.change_percent}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Board Meeting</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>SYMBOL</th>
+            <th>COMPANY NAME</th>
+            <th>A/C PERIOD</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if boardmeeting_list %} {% for i in boardmeeting_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.Symbol}}</td>
+            <td>{{i.CompanyName}}</td>
+            <td>{{i.AC_Period}}</td>
+            <td>{{i.Date}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Local Commodities</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>UREA SONA</th>
+            <th>DAP</th>
+            <th>PETROL</th>
+            <th>DIESEL</th>
+            <th>LPG</th>
+            <th>SUGAR</th>
+            <th>CEMENT</th>
+            <th>GOLD</th>
+            <th>SILVER</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if local_comm_list %} {% for i in local_comm_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.urea_sona}}</td>
+            <td>{{i.DAP}}</td>
+            <td>{{i.Petrol}}</td>
+            <td>{{i.Diesel}}</td>
+            <td>{{i.LPG}}</td>
+            <td>{{i.Sugar}}</td>
+            <td>{{i.Cement}}</td>
+            <td>{{i.Gold}}</td>
+            <td>{{i.Silver}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>International Commodities</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Crude Oil</th>
+            <th>Brent</th>
+            <th>Gold</th>
+            <th>Silver</th>
+            <th>Platinum</th>
+            <th>Copper</th>
+            <th>Cotton</th>
+            <th>Sugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if international_comm_list %} {% for i in international_comm_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Crude_oil}}</td>
+            <td>{{i.Brent}}</td>
+            <td>{{i.Gold}}</td>
+            <td>{{i.Silver}}</td>
+            <td>{{i.Platinum}}</td>
+            <td>{{i.Copper}}</td>
+            <td>{{i.Cotton}}</td>
+            <td>{{i.Sugar}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Currency</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>CURRENCY</th>
+            <th>READY</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if currency_list %} {% for i in currency_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.CURRENCY}}</td>
+            <td>{{i.READY}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Header</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Turn Over</th>
+            <th>Trade Value</th>
+            <th>Market Capitalization</th>
+            <th>Equal</th>
+            <th>Total</th>
+            <th>KSE 100</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if header_list %} {% for i in header_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Turn_Over}}</td>
+            <td>{{i.Trade_value}}</td>
+            <td>{{i.market_capitalization}}</td>
+            <td>{{i.Equal}}</td>
+            <td>{{i.Total}}</td>
+            <td>{{i.Kse_100}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="text-center"><u>Header2</u></h2>
+      <br />
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Indexes</th>
+            <th>Prevous Index</th>
+            <th>Current Index</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Net Change Points</th>
+            <th>Net Change %</th>
+            <th>Turn Over</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if header2_list %} {% for i in header2_list %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.Indexes}}</td>
+            <td>{{i.Previos_Index}}</td>
+            <td>{{i.Current_Index}}</td>
+            <td>{{i.High}}</td>
+            <td>{{i.Low}}</td>
+            <td>{{i.NetChange_points}}</td>
+            <td>{{i.NetChange_percent}}</td>
+            <td>{{i.TurnOver}}</td>
+          </tr>
+          {% endfor %} {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
